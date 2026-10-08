@@ -1,0 +1,11 @@
+name: p5_consensus_hybrid
+stt: {engine: whisper, model: large-v3, compute_type: float16, beam_size: 5, prompt: true}
+diarization: {enabled: true, model: pyannote/speaker-diarization-3.1}
+consensus: {enabled: true, model: nvidia/parakeet-tdt-0.6b-v2, chunk_s: 240}
+refine: {llm: qwen7b, guard: true, gate: true, glossary: true, redecode: true, redecode_max: 60, use_alts: true,
+         window: 10, ctx_units: 3, min_sim: 0.5, logprob_thr: -0.45, low_word_prob: 0.4, disagree_thr: 0.12}
+document: {llm: llama8b, grounded: true, verify: true, consensus_runs: 2, chunk_words: 1800}
+llms:
+  qwen7b:  {backend: hf, model_id: Qwen/Qwen2.5-7B-Instruct,  load_4bit: true}
+  llama8b: {backend: hf, model_id: meta-llama/Llama-3.1-8B-Instruct, load_4bit: true}
+  qwen14b: {backend: hf, model_id: Qwen/Qwen2.5-14B-Instruct, load_4bit: true}

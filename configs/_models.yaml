@@ -1,0 +1,6 @@
+# Shared model registry. Copy the `llms:` block into each path config (kept inline so every config is self-contained).
+llms:
+  qwen7b:  {backend: hf, model_id: Qwen/Qwen2.5-7B-Instruct,  load_4bit: true}
+  llama8b: {backend: hf, model_id: meta-llama/Llama-3.1-8B-Instruct, load_4bit: true}   # gated: accept licence on Hugging Face
+  qwen14b: {backend: hf, model_id: Qwen/Qwen2.5-14B-Instruct, load_4bit: true}          # ~9 GB at 4-bit, Kaggle/Colab T4
+  # api:   {backend: openai, model_id: <model>, base_url: http://localhost:8000/v1}     # vLLM / Ollama / hosted

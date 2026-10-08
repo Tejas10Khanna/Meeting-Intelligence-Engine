@@ -1,0 +1,9 @@
+{
+  "terms": ["Kubernetes", "Postgres", "SLA", "Q3 roadmap"],
+  "decisions": ["Use Postgres for the new billing service"],
+  "proposals": ["Consider moving the cache layer to Redis"],
+  "actions": [
+    {"task": "Send the migration plan", "owner": "Priya", "deadline": "Friday"},
+    {"task": "Update the runbook", "owner": "unspecified", "deadline": "unspecified"}
+  ]
+}

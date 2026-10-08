@@ -1,0 +1,22 @@
+# Core
+faster-whisper
+torch
+transformers>=4.44
+accelerate
+bitsandbytes
+pydantic>=2
+pyyaml
+rapidfuzz
+python-docx
+gradio
+requests
+# Optional modules
+pyannote.audio>=3.1,<4        # Paths 3 and 5 (needs HF_TOKEN + accepted model terms)
+nemo_toolkit[asr]             # Paths 4 and 5 (Parakeet)
+# Evaluation / training
+jiwer
+pandas
+sentence-transformers
+peft
+datasets
+pytest

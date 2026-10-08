@@ -1,0 +1,29 @@
+{
+  "summary": "The call is a customer support interaction between Benjamin (customer) and Jorgen (agent) discussing the withdrawal of funds from Atomic Wallet, the associated fees (around $27,000), tax implications (capital gains vs. income tax in Canada), and the possibility of transferring the crypto to another exchange (EdEx/Index) to handle taxes independently.",
+  "minutes": [
+    "Benjamin inquired about a $27,000 fee for withdrawing funds from Atomic and whether it includes Canadian income taxes.",
+    "Jorgen clarified that the tax would be capital gains tax, not income tax, since Benjamin is not a day trader.",
+    "They discussed the option of transferring the cryptocurrency directly to another exchange (EdEx/Index/Nordex) to bypass the fiat withdrawal and handle the tax implications independently.",
+    "Jorgen advised Benjamin to contact Atomic Support to clarify the refund process, confirm if the fee includes taxes, and ask if a direct crypto transfer to another exchange is possible."
+  ],
+  "key_decisions": [
+    "Benjamin will contact Atomic to explore the alternative transfer method to another exchange."
+  ],
+  "action_items": [
+    {
+      "task": "Contact Atomic to confirm the refund process and if the transfer can be made directly to a Canadian bank account or another exchange.",
+      "owner": "Benjamin",
+      "deadline": "Unspecified"
+    },
+    {
+      "task": "Inquire whether the Atomic fee includes taxes and how it will be justified.",
+      "owner": "Benjamin",
+      "deadline": "Unspecified"
+    },
+    {
+      "task": "Send a screenshot of the communication with Atomic to Jorgen for further review.",
+      "owner": "Benjamin",
+      "deadline": "Unspecified"
+    }
+  ]
+}
